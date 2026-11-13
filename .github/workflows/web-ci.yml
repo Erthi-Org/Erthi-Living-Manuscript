@@ -8,7 +8,8 @@ on:
 
 jobs:
   web:
-    runs-on: ubuntu-latest
+    # Match the Ubuntu version supported by the locked Playwright browser build.
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: apps/web
